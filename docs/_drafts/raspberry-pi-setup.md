@@ -4,7 +4,18 @@ title: Setting up the Raspberry Pi
 
 # Setting up the Raspberry Pi
 
+## Required hardware
+
 ![Hardware components]({{ site.url }}/assets/hardware-components.jpg)
+
+The following hardware components are required:
+
+* [Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
+* [Raspberry Pi 4 case](https://www.raspberrypi.org/products/raspberry-pi-4-case/)
+* [USB-C power supply](https://www.raspberrypi.org/products/type-c-power-supply/)
+* 64 GB microSD card
+* 128 GB Solid State USB flash drive
+* Micro HDMI to HDMI adapter (optional)
 
 ## Setup
 
