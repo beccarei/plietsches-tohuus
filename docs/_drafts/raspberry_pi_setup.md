@@ -4,6 +4,8 @@ title: Setting up the Raspberry Pi
 
 # Setting up the Raspberry Pi
 
+![Hardware components]({{ site.url }}/assets/hardware-components.jpg)
+
 Flash with
 
     $ sudo dd bs=1M if=2019-09-26-raspbian-buster-lite.img of=/dev/mmcblk0
