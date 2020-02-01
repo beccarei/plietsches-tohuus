@@ -27,7 +27,7 @@ The following hardware components are required:
    Boot with that image. 
    Careful - sometimes the keyboard pulls a lot of energy and the system will not boot as expected. In this case just boot without a keyboard and plug it in after boot.
 
-1. Login with “pi” und “raspberrz” (english keyboard) and configure the system.
+1. Login as user `pi` with the default password `raspberry` (`raspberrz` on a german keyboard) to configure the system.
 
    * Configure the keyboard.
    ```bash
