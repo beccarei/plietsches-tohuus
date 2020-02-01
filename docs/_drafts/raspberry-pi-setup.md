@@ -49,7 +49,7 @@ The following hardware components are required:
    $ sudo apt upgrade
    ```
 
-   * Configure the hostname so it fits your network standard. In our case it is something from the Simpsons.
+   * Configure the hostname so it fits your network standard. In our case it is the character [Professor Frink](https://en.wikipedia.org/wiki/Professor_Frink) from the Simpsons.
    ```bash
    $ sudo vi /etc/hostname
    ```
