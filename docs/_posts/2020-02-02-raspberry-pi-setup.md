@@ -6,7 +6,7 @@ title: Setting up the Raspberry Pi
 
 ## Required hardware
 
-![Hardware components]({{ site.url }}/assets/hardware-components.jpg)
+![Hardware components]({{ site.url }}{{ "/assets/hardware-components.jpg" | relative_url }})
 
 The following hardware components are required:
 
