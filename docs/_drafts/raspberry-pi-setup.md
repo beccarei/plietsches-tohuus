@@ -74,6 +74,28 @@ The following hardware components are required:
    If you are using windows, you need a Putty on your local machine. 
    If you do not know ssh, read about it on the web and just do it.
 
+1. Mount USB device on startup
+
+   * Format device with ext4.
+   ```bash
+   $ sudo mkfs.ext4 /dev/sda1
+   ```
+
+   * Get UUID.
+   ```bash
+   $ sudo blkid /dev/sda1 | awk -F'"' '{print $2}'
+   ```
+
+   * Add mount point.
+   ```bash
+   $ sudo mkdir /var/lib/influxdb
+   ```
+
+   * Add entry to `/etc/fstab`.
+   ```
+   UUID=25548120-96bc-49c4-b66d-dd8461cedc13 /var/lib/influxdb auto nosuid,nodev,nofail 0 0 
+   ```
+
 ## More information
 * [Raspberry Pi](https://www.raspberrypi.org/)
 * [Images for the Raspberry Pi](https://www.raspberrypi.org/downloads/)
