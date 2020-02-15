@@ -1,0 +1,24 @@
+---
+- name: Setup Node-RED
+
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Upgrade all installed packages
+      apt: upgrade=safe update_cache=yes cache_valid_time=3600
+
+    - name: Add Apt signing key for Podman repository
+      apt_key:
+        url: https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/Raspbian_10/Release.key
+        state: present
+
+    - name: Add Podman repository
+      apt_repository:
+        repo: deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/Raspbian_10/ / 
+        state: present
+
+    - name: Install Podman
+      apt:
+        name: podman
+        state: present
